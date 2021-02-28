@@ -1,17 +1,18 @@
 {
-  "name": "cdf-interactive-landscape",
+  "name": "skysail-interactive-landscape",
+  "workspaces": [
+    "node_modules/interactive-landscape"
+  ],
   "version": "1.0.0",
-  "description": "Interactive visualization of Continuous Delivery Foundation",
+  "description": "Interactive visualization of Skysail",
   "engines": {
     "npm": ">=3",
     "node": ">= 10.5"
   },
   "scripts": {
     "start": "npm run build",
-    "build": "npm config set scripts-prepend-node-path true; export PROJECT_PATH=\"$PWD\"; npm explore interactive-landscape -- npm run build"
+    "build": "npm config set scripts-prepend-node-path true;  npm explore interactive-landscape -- npm run build"
   },
-  "author": "LFDL",
-  "license": "Apache-2.0",
   "dependencies": {
     "interactive-landscape": "1.0.523"
   },
