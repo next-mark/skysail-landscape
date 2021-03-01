@@ -1,5 +1,9 @@
 {
   "name": "skysail-interactive-landscape",
+  "private": true,
+  "workspaces": [
+    "node_modules/interactive-landscape"
+  ],
   "version": "1.0.0",
   "description": "Interactive visualization of Skysail",
   "engines": {
